@@ -60,14 +60,7 @@ Processing the mail queue
 -----
 
 Now calling Yii::$app->mailqueue->process() will process the message queue and send out the emails. 
-In one of your controller actions:
 
-```
-public function actionSend()
-{
-    Yii::$app->mailqueue->process();
-}
-```
 
 Most preferably this could be a console command (eg: mail/send) which can be triggered by a CRON job.
 -----
@@ -81,10 +74,11 @@ Set a CRON job to run console command:
  ```
  
  Usage
- -----
+-----
+ ```
  Yii::$app->mailer->compose('contact/html', ['contactForm' => $form])
      ->setFrom('from@domain.com')
      ->setTo($form->email)
      ->setSubject($form->subject)
      ->send();
-
+```
