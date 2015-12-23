@@ -1,6 +1,5 @@
 QueueMails
 ================
-QueueMails
 
 Installation
 -----------
