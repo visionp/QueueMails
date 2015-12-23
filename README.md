@@ -52,7 +52,7 @@ Once the extension is installed, add following code to your application configur
 
 Run yii migrate command in command line:
 
-yii migrate --migrationPath=@vendor/vision/queue-mails/migrations
+php yii migrate --migrationPath=@vendor/vision/yii2-queue-mails/migrations
 
 Processing the mail queue
 -----
