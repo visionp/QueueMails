@@ -1,0 +1,21 @@
+{
+    "name": "vision/yii2-queue-mails",
+    "description": "Queue mails",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","queue mails","email"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandr Petrenko",
+            "email": "visionp1986@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "vision\\queue_mails\\": ""
+        }
+    }
+}
