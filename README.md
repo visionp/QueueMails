@@ -50,7 +50,6 @@ Once the extension is installed, add following code to your application configur
   Following properties are available for customizing the mail queue behavior.
   
   mailsPerRound: Number of emails to send at a time.
-  
 
 Run yii migrate command in command line:
 
