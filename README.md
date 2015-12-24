@@ -15,7 +15,7 @@ php composer.phar require --prefer-dist vision/yii2-private-messages "@dev"
 or add to the require section of your composer.json file.
 
 ```
-"vision/yii2-queue-mails":"@dev"
+"vision/yii2-queue-mails":"~1.0.0"
 ```
 
 Configuration
@@ -54,11 +54,6 @@ Run yii migrate command in command line:
 
 php yii migrate --migrationPath=@vendor/vision/yii2-queue-mails/migrations
 
-Processing the mail queue
------
-
-Now calling Yii::$app->mailqueue->process() will process the message queue and send out the emails. 
-
 
 Most preferably this could be a console command (eg: mail/send) which can be triggered by a CRON job.
 -----
@@ -80,3 +75,8 @@ Set a CRON job to run console command:
      ->setSubject($form->subject)
      ->send();
 ```
+
+Processing the mail queue
+-----
+
+Now calling Yii::$app->mailqueue->process() will process the message queue and send out the emails. 
